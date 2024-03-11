@@ -4,25 +4,29 @@ import {
   PageWrapper,
 } from './styles'
 
-/* components */
+// Header & Footer
 import Header from './components/header';
-
-/* pages */
-import SimulationRoom from "./pages/simulation-room";
 import Footer from './components/footer';
+
+// App Pages
+import SimulationRoom from "./pages/simulation-room";
+import Parametrization from './pages/parametrization';
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <AppWrapper>
-        <Header />
-        <Routes>
-          <Route path="/" element={<SimulationRoom />} />
-        </Routes>
-        <Footer />
-      </AppWrapper>
-    </BrowserRouter>
+      <BrowserRouter>
+        <AppWrapper>
+          <PageWrapper>
+            <Header />
+            <Routes>
+              <Route path="/" element={<SimulationRoom />} />
+              <Route path="/parametrization" element={<Parametrization />} />
+            </Routes>
+            <Footer />
+          </PageWrapper>
+        </AppWrapper>
+      </BrowserRouter>
     </>
   );
 }

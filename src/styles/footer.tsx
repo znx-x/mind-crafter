@@ -7,7 +7,7 @@ import {
 export const FooterWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    margin: 0.5rem;
+    margin: 1rem 0.5rem;
     min-height: 2rem;
     background: transparent;
     border-top: 1px solid ${BorderColor};

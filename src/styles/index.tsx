@@ -11,6 +11,7 @@ export const DefaultTextFontSize = `0.9rem`;
 export const AppWrapper = styled.div`
     width: calc(100vw - 2rem);
     min-height: calc(100vh - 2rem);
+    text-align: center;
     margin: 0 auto;
     padding: 1rem;
     background: rgba(22, 22, 22, 1);
@@ -18,6 +19,7 @@ export const AppWrapper = styled.div`
 `
 
 export const PageWrapper = styled.div`
-    width: 1320px;
-    margin: 0;
+    max-width: 1320px;
+    margin: auto;
+    padding: auto;
 `

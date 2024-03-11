@@ -10,6 +10,9 @@ export function Header() {
             <HeaderItem href='/' target='_self'>
                 Simulation Room
             </HeaderItem>
+            <HeaderItem href='/parametrization' target='_self'>
+                Parametrization
+            </HeaderItem>
         </HeaderWrapper>
         </>
     )
