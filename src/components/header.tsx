@@ -4,13 +4,13 @@ import {
 } from '../styles/header'
 
 export function Header() {
-    return(
+    return (
         <>
-        <HeaderWrapper>
-            <HeaderItem href='/' target='_self'>
-                AI Simulation Room
-            </HeaderItem>
-        </HeaderWrapper>
+            <HeaderWrapper>
+                <HeaderItem href='/' target='_self'>
+                    AI Simulation Room
+                </HeaderItem>
+            </HeaderWrapper>
         </>
     )
 }

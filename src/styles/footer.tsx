@@ -32,7 +32,7 @@ export const FooterSection = styled.div`
     display: flex;
     flex-direction: column;
     justify-items: start;
-    padding: 1rem;
+    padding: 1rem 3rem;
     align-items: start;
 `
 

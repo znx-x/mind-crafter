@@ -80,15 +80,15 @@ export function SimulationRoom() {
 
     return (
         <>
-        <ParametersWrapper>
-            <TextInputTitle>Define Parameters for S1:</TextInputTitle>
-            <TextInput placeholder="AI Parameters..." value={subject1Params} onChange={e => setSubject1Params(e.target.value)} />
-            <TextInputTitle>Define Parameters for S2</TextInputTitle>
-            <TextInput placeholder="AI Parameters..." value={subject2Params} onChange={e => setSubject2Params(e.target.value)} />
-            <TextInputTitle>Define Trigger Message for S2</TextInputTitle>
-            <TextInput placeholder="Triger Message..." value={initialMessage} onChange={e => setInitialMessage(e.target.value)} />
-            <TextInputTitle>Define Number of Prompts for Simulation</TextInputTitle>
-            <TextInput type="number" value={promptCount} onChange={e => setPromptCount(Math.max(2, Math.min(maxMessageCount, parseInt(e.target.value) || 0)))} />
+            <ParametersWrapper>
+                <TextInputTitle>Define Parameters for S1:</TextInputTitle>
+                <TextInput placeholder="AI 1 Parameters..." value={subject1Params} onChange={e => setSubject1Params(e.target.value)} />
+                <TextInputTitle>Define Parameters for S2</TextInputTitle>
+                <TextInput placeholder="AI 2 Parameters..." value={subject2Params} onChange={e => setSubject2Params(e.target.value)} />
+                <TextInputTitle>Define Trigger Message for S2</TextInputTitle>
+                <TextInput placeholder="Trigger Message..." value={initialMessage} onChange={e => setInitialMessage(e.target.value)} />
+                <TextInputTitle>Define Number of Prompts for Simulation</TextInputTitle>
+                <TextInput type="number" value={promptCount} onChange={e => setPromptCount(Math.max(2, Math.min(maxMessageCount, parseInt(e.target.value) || 0)))} />
             </ParametersWrapper>
             <ButtonWrapper>
                 <Button onClick={startExchange}>Start Simulation</Button>
