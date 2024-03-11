@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# MindCrafter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MindCrafter is an open-source, advanced AI tool that can be utilized to create AI-to-AI interactions, advanced simulations, and more. It leverages the GPT API and is compatible with GPT 3.5 and GPT 4. **To use this application, you will need your own GPT API keys**.
 
-## Available Scripts
+## ⚠️ Disclaimer
 
-In the project directory, you can run:
+This application is currently in the **alpha** stage of development, meaning some functions may not work as expected or could be entirely absent. Moreover, extensive code changes might occur between versions. This software is provided on an 'as is' basis. Use it at your own risk.
 
-### `npm start`
+## License
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This software is distributed under GNU General Public License v3.0. Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installing
 
-### `npm test`
+First, clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```shell
+git clone https://github.com/znx-x/MindCrafter && cd MindCrafter
+```
 
-### `npm run build`
+Install all dependencies using npm:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```shell
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Now, copy .env.EXAMPLE to .env and edit the file, inputting your own parameters and API keys.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+mv .env.EXAMPLE .env
+```
 
-### `npm run eject`
+Your application should now be ready to run.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Running a Development Environment
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You can run your development environment with the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```shell
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Ensure your .env file is properly set up.
 
-## Learn More
+## Building & Deploying
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Build the application using:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```shell
+npm build
+```
