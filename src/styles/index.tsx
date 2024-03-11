@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-/* defaults */
+/* default styling parameters */
 
 export const BorderRadius = `16px`;
 export const BorderColor = `rgba(255, 255, 255, 0.1)`;
@@ -14,7 +14,7 @@ export const SecondaryColorDimmed = `rgba(255, 255, 255, 0.15)`;
 /* wrappers */
 
 export const AppWrapper = styled.div`
-    width: calc(100vw - 2rem);
+    width: calc(100% - 2rem);
     min-height: calc(100vh - 2rem);
     text-align: center;
     margin: 0 auto;
@@ -24,6 +24,9 @@ export const AppWrapper = styled.div`
 `
 
 export const PageWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 1320px;
     margin: auto;
     padding: auto;
@@ -34,11 +37,12 @@ export const PageWrapper = styled.div`
 export const ButtonWrapper = styled.a`
     text-decoration: none;
     cursor: pointer;
+    margin: 1rem;
 `
 
 export const Button = styled.div`
-    width: 320px;
-    margin: 1rem;
+    max-width: 320px;
+    margin: auto;
     padding: 1rem 2rem;
     color: ${PrimaryFontColor};
     background: ${PrimaryColor};
