@@ -8,7 +8,7 @@ import {
 export const HeaderWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    margin: 0.5rem;
+    margin: 1rem 0;
     padding-left: ${BorderRadius};
     padding-right: ${BorderRadius};
     min-height: 2rem;

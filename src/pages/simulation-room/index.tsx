@@ -7,7 +7,8 @@ import {
     Subject2ApiEndpoint,
 } from '../../constants/settings'
 import {
-    TextInput,
+    ParametersWrapper,
+    TextInput, TextInputTitle,
 } from '../../styles/simulationRoom'
 import {
     FormattedResponse,
@@ -79,10 +80,16 @@ export function SimulationRoom() {
 
     return (
         <>
-            <TextInput placeholder="Parameters for Subject 1..." value={subject1Params} onChange={e => setSubject1Params(e.target.value)} />
-            <TextInput placeholder="Parameters for Subject 2..." value={subject2Params} onChange={e => setSubject2Params(e.target.value)} />
-            <TextInput placeholder="Initial message, sent to Subject 2..." value={initialMessage} onChange={e => setInitialMessage(e.target.value)} />
-            <TextInput placeholder="No. of prompts..." type="number" value={promptCount} onChange={e => setPromptCount(Math.max(2, Math.min(maxMessageCount, parseInt(e.target.value) || 0)))} />
+        <ParametersWrapper>
+            <TextInputTitle>Define Parameters for S1:</TextInputTitle>
+            <TextInput placeholder="AI Parameters..." value={subject1Params} onChange={e => setSubject1Params(e.target.value)} />
+            <TextInputTitle>Define Parameters for S2</TextInputTitle>
+            <TextInput placeholder="AI Parameters..." value={subject2Params} onChange={e => setSubject2Params(e.target.value)} />
+            <TextInputTitle>Define Trigger Message for S2</TextInputTitle>
+            <TextInput placeholder="Triger Message..." value={initialMessage} onChange={e => setInitialMessage(e.target.value)} />
+            <TextInputTitle>Define Number of Prompts for Simulation</TextInputTitle>
+            <TextInput type="number" value={promptCount} onChange={e => setPromptCount(Math.max(2, Math.min(maxMessageCount, parseInt(e.target.value) || 0)))} />
+            </ParametersWrapper>
             <ButtonWrapper>
                 <Button onClick={startExchange}>Start Simulation</Button>
             </ButtonWrapper>
@@ -91,9 +98,11 @@ export function SimulationRoom() {
                     Chat and Responses
                 </TextBoxHeader>
                 {messages.map((msg, index) => (
-                    <FormattedResponseContainer key={index}>
-                        <b>Subject {msg.subject}:</b> <FormattedResponse>{msg.content}</FormattedResponse>
-                    </FormattedResponseContainer>
+                    <>
+                        <FormattedResponseContainer key={index}>
+                            <b>Subject {msg.subject}:</b> <FormattedResponse>{msg.content}</FormattedResponse>
+                        </FormattedResponseContainer>
+                    </>
                 ))}
             </TextBox>
         </>

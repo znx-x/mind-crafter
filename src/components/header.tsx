@@ -8,10 +8,7 @@ export function Header() {
         <>
         <HeaderWrapper>
             <HeaderItem href='/' target='_self'>
-                Simulation Room
-            </HeaderItem>
-            <HeaderItem href='/parametrization' target='_self'>
-                Parametrization
+                AI Simulation Room
             </HeaderItem>
         </HeaderWrapper>
         </>

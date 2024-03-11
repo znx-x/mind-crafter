@@ -10,7 +10,6 @@ import Footer from './components/footer';
 
 // App Pages
 import SimulationRoom from "./pages/simulation-room";
-import Parametrization from './pages/parametrization';
 
 function App() {
   return (
@@ -21,10 +20,9 @@ function App() {
             <Header />
             <Routes>
               <Route path="/" element={<SimulationRoom />} />
-              <Route path="/parametrization" element={<Parametrization />} />
             </Routes>
-            <Footer />
           </PageWrapper>
+          <Footer />
         </AppWrapper>
       </BrowserRouter>
     </>

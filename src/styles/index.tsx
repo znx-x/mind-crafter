@@ -14,11 +14,11 @@ export const SecondaryColorDimmed = `rgba(255, 255, 255, 0.15)`;
 /* wrappers */
 
 export const AppWrapper = styled.div`
-    width: calc(100% - 2rem);
-    min-height: calc(100vh - 2rem);
+    width: 100%;
+    min-height: 100vh;
     text-align: center;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0;
     background: rgba(22, 22, 22, 1);
     overflow-x: hidden;
 `
@@ -37,7 +37,7 @@ export const PageWrapper = styled.div`
 export const ButtonWrapper = styled.a`
     text-decoration: none;
     cursor: pointer;
-    margin: 1rem;
+    margin: 2rem 1rem;
 `
 
 export const Button = styled.div`
