@@ -95,7 +95,7 @@ export function SimulationRoom() {
             </ButtonWrapper>
             <TextBox>
                 <TextBoxHeader>
-                    Chat and Responses
+                    Simulation Box
                 </TextBoxHeader>
                 {messages.map((msg, index) => (
                     <>
