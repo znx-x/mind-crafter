@@ -15,7 +15,7 @@ This software is distributed under GNU General Public License v3.0. Permissions 
 First, clone the repository:
 
 ```shell
-git clone https://github.com/znx-x/MindCrafter && cd MindCrafter
+git clone https://github.com/znx-x/mind-crafter && cd mind-crafter
 ```
 
 Install all dependencies using npm:
